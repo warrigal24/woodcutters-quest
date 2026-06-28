@@ -1,0 +1,170 @@
+The Woodcutter's Quest
+By Shaun McClure & Garry Francis
+For Z-code interpreters
+
+Solution by Garry Francis
+----------------------------------------
+This is a minimal solution. You'll need to EXAMINE lots of things for this solution to make sense. Some optional (but significant) commands are shown in parentheses. These can be omitted once you know what to do.
+
+As the game progresses, you will need to light a fire. There are four sources of wood for the fire: the logs, the firewood, the chopped wood and the rotten timber. I've opted for the first one in the solution, as this is the first one you encounter. The commands to find the others are shown in parentheses.
+
+You will also need to cut a rope. There are two sources of sharp implements: the axe and the broken pottery. I've opted for the first, as it's the least obscure. The commands to use the second are shown in parentheses.
+
+Finally, you will need to do some digging. There are two digging implements: the shovel and the broken pottery. Once again, I've opted for the first, as it's the least obscure. The commands to use the second are shown in parentheses.
+
+(I) (you're carrying an axe)
+(X FOREST) (it's full of trees)
+(X TREES) (the dead ones make good firewood)
+CHOP TREE WITH AXE (you chop down a dead tree and chop it up into logs)
+GET LOGS
+S
+GET SHOVEL
+(SEARCH WOODPILE) (you find some firewood)
+(GET FIREWOOD)
+(S) (the back door is shut)
+OPEN DOOR
+S
+GET ALL (chair and meat taken)
+(CHOP BED WITH AXE) (you now have a chopped-up bed)
+(GET WOOD)
+(E) (the front door is shut)
+OPEN DOOR
+E
+N
+(OPEN TRAPDOOR) (it's out of reach)
+DROP CHAIR
+STAND ON IT
+OPEN TRAPDOOR
+U
+(X BOOK) (it's a book about the history of these lands, you should read it)
+(READ BOOK) (it's suspected that the wizard is a vampire, but this is false)
+GET POLISH
+D (you lower yourself onto the chair)
+GET OFF CHAIR
+S
+E
+(X RUBBLE) (you wonder if anything remains under the rubble)
+SEARCH RUBBLE (you find a candle)
+GET CANDLE
+W
+NE
+GET JUG
+(X IT) (it's fragile-looking with a crack in the side)
+(X OVEN) (it's closed)
+OPEN OVEN (it contains some embers)
+(X EMBERS) (they're still hot)
+LIGHT CANDLE WITH EMBERS
+SW
+SE
+E
+E
+FILL JUG WITH WATER
+(S)
+(CHOP BOAT WITH AXE)
+(GET TIMBER)
+(N)
+W
+W
+NW
+S
+S
+(X BEEHIVE) (it has a hinged lid, but bees prevent you getting closer)
+(OPEN BEEHIVE) (the bees prevent you getting closer)
+DROP LOGS (and FIREWOOD, WOOD and TIMBER if you got them)
+LIGHT LOGS (or FIREWOOD or WOOD or TIMBER) WITH CANDLE (you start a small fire)
+POUR WATER ON FIRE (it starts smoking and calms the bees)
+OPEN BEEHIVE (you reveal a large chunk of honeycomb)
+GET HONEYCOMB
+N
+N
+SE
+E
+E
+S
+(X MAST) (there's a rope tied to it)
+(CLIMB IT) (there are no hand or foot holds)
+(X ROPE) (it's tied to the mast)
+(CUT ROPE WITH AXE) (it needs something solid behind it, so untie it first)
+(UNTIE ROPE) (the knot is out of reach)
+(CLIMB ROPE) (it swings around and you get giddy)
+(CUT ROPE WITH POTTERY) (you need to cut it from the top, but it's out of reach)
+CHOP MAST WITH AXE (it comes crashing down)
+(X IT) (you can get to the rope now)
+(UNTIE ROPE) (it's too tight, you'll have to cut it)
+(BREAK JUG) (you're left with a sharp piece of pottery)
+CUT ROPE WITH AXE (or POTTERY)
+GET ROPE
+(X BOAT) (you wonder if there's anything useful to be found in it)
+SEARCH BOAT (or LOOK UNDER BOAT, you find an anchor)
+GET ANCHOR
+TIE IT TO ROPE (you now have a grappling hook)
+(E) (river is too deep to cross here)
+N
+(E) (river is too deep to cross here)
+N
+(E) (man-eating fish start nibbling your boots, so you back out)
+(X FISH) (they're small fish with sharp teeth, hundreds of them can be fatal)
+THROW MEAT INTO RIVER (fish eat it and follow it as it floats downstream)
+E
+NE
+(X VEGETATION) (it might be worth searching it)
+(SEARCH IT) (you find some wild garlic)
+(GET GARLIC)
+(EAT IT) (now your breath stinks)
+(X ME) (you have really bad breath)
+E
+(X GRASS) (it's thick and luscious, you can see why the goats like it here)
+GET GRASS
+E
+U (there's a goat here)
+(E) (the goat won't let you pass)
+GIVE GRASS TO GOAT (you can now pass)
+E
+E
+D
+DIG SOIL WITH SHOVEL (or POTTERY if you got it earlier, you fall into a hole)
+X CART (you find a silver nugget)
+GET NUGGET
+U
+E
+E (there's a bear here)
+(E) (the bear is blocking the path)
+GIVE HONEYCOMB TO BEAR (the bear wanders off to eat it, you can now pass)
+E
+E (there's a raised drawbridge here)
+(N) (the moat doesn't look healthy)
+(X DRAWBRIDGE) (there's a gap between the drawbridge and the ramparts)
+THROW GRAPPLING HOOK AT DRAWBRIDGE (it catches, but you can't let go of rope)
+PULL IT (the drawbridge comes crashing down)
+(L) (there's now a lowered drawbridge here)
+(X DRAWBRIDGE) (you can now enter castle to the north)
+N
+N (there's a goblin guard here)
+(N) (the goblin guard blocks your path)
+(TALK TO GUARD) (ask him about stuff)
+(ASK GUARD ABOUT BLOOD, CASTLE, DUNGEON, GOBLIN, GOLD, GUARD, HIMSELF, ME, SHIELD, SILVER, TOWER, VAMPIRE, VILLAGERS, WIZARD)
+(KILL GUARD WITH AXE) (he deflects your blow with his shield)
+GIVE NUGGET TO GUARD (he can't take bribes, so he trades for his shield instead)
+(N) (he still won't let you in, but he's now unprotected)
+KILL GUARD WITH AXE (you feel bad about it, but he was one of wizard's minions)
+(GET NUGGET)
+POLISH SHIELD WITH POLISH (you now have a shiny shield)
+SEARCH GUARD (you find 10 gold coins)
+GET COINS
+N
+U
+U
+Z
+Z
+Z (the wizard casts a spell that relects off your shiny shield and kills him)
+(SEARCH WIZARD) (there's not enough light to see what you're doing)
+OPEN CURTAINS (sunlight streams in)
+SEARCH WIZARD (you find a key)
+GET KEY
+D
+D
+D
+D
+UNLOCK DOOR WITH KEY (you hear a loud click followed by whispering voices)
+OPEN IT (you have saved the villagers)
+***THE END***
